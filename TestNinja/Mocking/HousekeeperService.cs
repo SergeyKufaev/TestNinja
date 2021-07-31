@@ -2,14 +2,14 @@ using System;
 
 namespace TestNinja.Mocking
 {
-    public class HousekeeperHelper
+    public class HousekeeperService
     {
         readonly IUnitOfWork _unitOfWork;
         readonly IStatementGenerator _statementGenerator;
         readonly IEmailSender _emailSender;
         readonly IXtraMessageBox _messageBox;
 
-        public HousekeeperHelper(
+        public HousekeeperService(
             IUnitOfWork unitOfWork,
             IStatementGenerator statementGenerator,
             IEmailSender emailSender,
